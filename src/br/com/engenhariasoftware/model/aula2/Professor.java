@@ -6,6 +6,12 @@ public class Professor extends Pessoa implements Educador, SerVivo {
 	private String cpf;
 	private String telefone;
 
+	public Professor(String nome, String cpf, String telefone) {
+		this.nome = nome;
+		this.cpf = cpf;
+		this.telefone = telefone;
+	}
+
 	public void ensina() {
 		System.out.println("O professor " + nome + " está ensinando");
 	}
@@ -33,5 +39,5 @@ public class Professor extends Pessoa implements Educador, SerVivo {
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
-	
+
 }

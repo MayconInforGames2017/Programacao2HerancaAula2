@@ -5,6 +5,13 @@ public class Coordenador extends Professor implements Gestor {
 	private String nome;
 	private String cpf;
 	private String telefone;
+	
+	public Coordenador(String nome, String cpf, String telefone, String nome2, String cpf2, String telefone2) {
+		super(nome, cpf, telefone);
+		nome = nome2;
+		cpf = cpf2;
+		telefone = telefone2;
+	}
 
 	public void finannceiro() {
 		System.out.println("O coordenadoor " + nome + " é responsavel pelo financeiro");
